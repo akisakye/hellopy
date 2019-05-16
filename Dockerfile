@@ -1,7 +1,7 @@
-FROM python:2
+FROM python:2-alpine3.8
 
 WORKDIR /usr/src/app
 
-COPY . .
+COPY ./src .
 
 CMD [ "python", "./hello.py" ]
